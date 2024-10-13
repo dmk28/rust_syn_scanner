@@ -1,0 +1,12 @@
+[package]
+name = "rust_syn_scanner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["full", "time"] }
+pnet = "0.33"
+clap = { version = "4.3", features = ["derive"] }
+rand = "0.8"
+futures = "0.3"
+chrono = "0.4.38"
