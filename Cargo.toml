@@ -10,3 +10,6 @@ clap = { version = "4.3", features = ["derive"] }
 rand = "0.8"
 futures = "0.3"
 chrono = "0.4.38"
+socket2 = "0.5.7"
+byteorder = "1.5.0"
+tokio-stream = "0.1.16"

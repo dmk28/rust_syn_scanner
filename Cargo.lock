@@ -691,12 +691,15 @@ checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
 name = "rust_syn_scanner"
 version = "0.1.0"
 dependencies = [
+ "byteorder",
  "chrono",
  "clap",
  "futures",
  "pnet",
  "rand",
+ "socket2",
  "tokio",
+ "tokio-stream",
 ]
 
 [[package]]
@@ -826,6 +829,17 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 2.0.79",
+]
+
+[[package]]
+name = "tokio-stream"
+version = "0.1.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4f4e6ce100d0eb49a2734f8c0812bcd324cf357d21810932c5df6b96ef2b86f1"
+dependencies = [
+ "futures-core",
+ "pin-project-lite",
+ "tokio",
 ]
 
 [[package]]
